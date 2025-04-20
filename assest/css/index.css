@@ -435,8 +435,31 @@ nav{
 }
 
 /* reponsive */
-/* max width cho mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 992px){
+    .product-list .product-item {
+        width: calc(33.3333% - 24px);
+    }
+
+    .services .service-item{
+        width: 100%;
+    }
+    .services .service-item::before{
+        content: normal;
+    }
+    /* footer */
+    .social-links, .my-account{
+        width: 50%;
+    }
+
+    .useful-links .categorys{
+        width: 25%;
+    }
+    .contact-info{
+       width: 33.3333%; 
+    }
+}
+
+@media screen and (max-width: 768px){
     /* tìm đến all thằng con trực tiếp của html */
     .container .row > *{
         width: 100%;
@@ -463,5 +486,30 @@ nav{
     .useful-links h6{
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+
+    .product-list .product-item {
+        width: calc(50% - 24px);
+    }
+    .services .service-item::before{
+        content: normal;
+    }
+    /* footer */
+    .social-links{
+        width: 100%;
+    }
+
+    .useful-links .categorys, .contact-info, .my-account{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    
+}
+
+@media screen and (max-width: 480px){
+    .product-list .product-item {
+        width: calc(100% - 24px);
     }
 }
